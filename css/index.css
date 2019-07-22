@@ -1,3 +1,280 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset ---^*/
 
 
+.topContent {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
+}
+
+.nav-bar {
+    align-self: center;
+}
+
+.nav-bar a {
+    margin: 0px 15px 0 15px;
+    padding: 0 30px 0 30px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo {
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px 20px 0;
+    padding: 20px 0 20px 0;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    font-size: 90px;
+    font-family: bangers;
+}
+
+.welcome-text button {
+    padding: 5px 30px 5px 29px;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.main-content {
+    margin: 15px 0 15px 0;
+    padding: 5px 0 5px 0;
+}
+
+.top-text {
+    display:flex;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px 5px 0px;
+    padding: 5px 5px 5px 5px;
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-content h4 {
+    font-family: bangers;
+    font-size: 150%;
+}
+
+.text-content p {
+    font-size: 120%;
+    margin: 3px 0px 3px 0px;
+    padding: 5px 5px 5px 0px;
+}
+
+.middle-img {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.bottom-text {
+    display: flex;
+}
+
+.contact-info h4, address {
+    padding: 10px 0 10px 0px;
+    font-size: 100%;
+}
+
+.contact-info h4 {
+    font-family: bangers;
+}
+
+.contact-info address {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact-info {
+    margin: 0px 0 60px 10px;
+    padding: 0 0 40px 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 5px 0;
+    padding: 10px 0 5px 0;
+}
+
+.c {
+    align-self: flex-end;
+    padding: 0 45% 0 0;
+    flex-wrap: nowrap;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+@media(max-width: 800px) {
+    .logo {
+        align-self: center;
+        margin: 15px 0 10px 0;
+        padding: 15px 0 10px 0;
+    }
+
+    .welcome-text button {
+        margin: 15px 0 0 0;
+    }
+    
+    .topContent {
+        flex-direction: column-reverse;
+        margin: 0px 0 0px 0;
+        padding: 0px 0 0px 0;
+    }
+
+    .nav-bar {
+        margin: 10px 0 10px 0;
+        padding: 10px 0 10px 0;
+        
+    }
+
+    .nav-bar a {
+        padding: 0 20px 0 20px;
+        font-family: 'Trebuchet MS';
+        color: rgb(197, 202, 207);
+    }
+
+    .nav-bar a:hover {
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    .techArt {
+        display: none;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .c {
+        margin: 0px 200px 0 0;
+        padding: 0px 110px 0 0;
+    }
+
+    hr {
+        border: 1px solid black;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        margin: 15px 0 10px 0;
+        padding: 15px 0 10px 0;
+    }
+
+    .nav-bar nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar a {
+        padding: 20px 213px 20px 213px;
+        font-size: larger;
+        color: lightgray;
+        border: .5px solid lightgrey;
+    }
+
+    .nav-bar a:hover {
+        background-color: black;
+        font-size: xx-large;
+        color: white;
+    }
+
+    .welcome button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .main-content {
+        margin: 15px 5px 15px 5px;
+        padding: 0px 5px 0px 5px;
+    }
+
+    .top-text {
+        flex-direction: column;
+    }
+
+    .bottom-text div {
+        border: ridge;
+    }
+
+    .bottom-text h4, p {
+        text-align: left;
+    }
+
+    .c {
+        margin: 0 160px 0 0;
+        padding: 0 0 0 0;
+    }
+
+    hr {
+        margin: 15px 5px 15px 5px;
+        padding: 0px 5px 0px 5px;
+    }
+
+}
