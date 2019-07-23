@@ -53,13 +53,21 @@ table {
 
 .nav-bar {
     align-self: center;
+    
 }
 
 .nav-bar a {
     margin: 0px 15px 0 15px;
     padding: 0 30px 0 30px;
     text-decoration: none;
+    color: rgb(194, 194, 194);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-bar a:hover {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
 }
 
 .logo {
