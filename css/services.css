@@ -1,0 +1,393 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+/*ol, ul {
+	list-style: none;
+}*/
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* My code */
+
+
+/*Nav bar & image*/
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 0px 10px 0px;
+}
+
+
+.nav-bar {
+    align-self: center;
+    margin: 0 0 0 50px;
+}
+
+.nav-bar a {
+    margin: 0px 50px 0px 0px;
+    padding: 0 30px 0 30px;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    font-family: 'Trebuchet MS';
+}
+
+.nav-bar a:hover {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+}
+
+/*Service text & image*/
+.services {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.services img {
+    width: 100%;
+}
+
+.services div {
+    width: -webkit-fill-available;
+    font-size: 150%;
+    margin: 30px 10px 30px 10px;
+}
+
+/*Main text*/
+
+.main-content {
+    margin: 0 5px 0 5px;
+    padding: 0 5px 0 5px;
+}
+
+.text-content {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0px 0px 35px 0px;
+}
+
+.text-content div {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0px 40px 0px 1px;
+    padding: 25px;
+    font-size: 150%;
+    border-radius: 1%;
+    background-color: rgb(233, 233, 233);
+}
+
+.text-content button {
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(206, 206, 206);
+}
+
+.text-content button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 30px;
+
+}
+
+.text-content p {
+    padding: 0px 0px 30px 0px;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    margin: 65px 5px 30px 5px;
+    padding: 0 5px 0 5px;
+}
+
+.fact-text {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0px 45px 0px 0px;
+    width: 48%;
+    font-size: 25px;
+}
+
+.cool-list ul {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0px 25px 0px 0px;
+    padding: 1rem;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.bottom-img {
+
+    display: flex;
+    align-self: center;
+    flex-flow: row-reverse wrap;
+    flex-grow: 1;
+}
+
+.bottom-img img {
+    width: 152%;
+    /*margin: 25px 0px 0px 25px;*/
+    border-radius: 15px;
+}
+
+/*Well... footer*/
+.c {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+hr {
+    margin: 30px 0px 30px 0px;
+    border: 1px solid black;
+}
+
+@media (max-width: 800px) {
+
+    .nav-bar {
+        flex-wrap: nowrap;
+        margin: 0 0 0 0;
+    }
+
+    .nav-bar a {
+        margin: 0 0 0 5px;
+        padding: 0 15px 0 15px;
+    }
+
+    .logo {
+        margin: 0px 5px 0 0;
+        padding: 5px 5px 0 0;
+    }
+
+    .bottom-content {
+        flex-direction: column-reverse;
+    }
+
+    .bottom-img {
+        width: 100%;
+    }
+
+    .fact-text {
+        width: 100%;
+        padding: 25px 45px 10px 0px;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .top-content {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        align-self: center;
+        margin: 5px 0 5px 0;
+        padding: 5px 0 5px 0;
+    }
+
+    .nav-bar nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar a {
+        padding: 20px 213px 20px 213px;
+        font-size: larger;
+        color: lightgray;
+        border: .5px solid lightgrey;
+    }
+
+    .nav-bar a:hover {
+        background-color: black;
+        font-size: xx-large;
+        color: white;
+    }
+
+    .services,
+    .services div {
+        margin: 15px 10px 0px 10px;
+    }
+
+    .services img {
+        width: 100%;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-content {
+        flex-flow: column nowrap;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .text-content div {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .bottom-content {
+        margin: 0px 5px 30px 5px;
+    }
+
+    hr {
+        margin: 15px 0px 15px 0px;
+    }
+}
