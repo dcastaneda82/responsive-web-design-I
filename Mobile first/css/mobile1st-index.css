@@ -1,0 +1,375 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*reset ---^*/
+
+body {
+    width: 500px;
+}
+
+.topContent {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.logo {
+    align-self: center;
+    margin: 15px 0 15px 0;
+}
+
+.nav-bar {
+    align-self: center;
+}
+
+.nav-bar a {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 210px 20px 213px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+    border: .5px solid lightgrey;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: black;
+    font-size: xx-large;
+    color: white;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+}
+
+.techArt {
+    display: none;
+}
+
+.welcome {
+    margin: 10px 0 10px 0;
+    padding: 5px 0 5px 0;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: bangers;
+    font-size: 100px;
+}
+
+.welcome-text button {
+    font-size: 20%;
+    align-self: center;
+    padding: 5px 25px 5px 25px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.top-text,
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 5px;
+}
+
+.text-content h4,
+.text-content2 h4 {
+    font-family: bangers;
+    padding: 5px 0 5px 0;
+    font-size: larger;
+    color: black;
+}
+
+.text-content p,
+.text-content2 p {
+    font-family: 'Trebuchet MS';
+    padding: 0 0 10px 0;
+    color: rgb(211, 211, 211);
+    text-align: center;
+}
+
+.text-content p:hover,
+.text-content2 p:hover {
+    font-family: 'Trebuchet MS';
+    padding: 0 0 10px 0;
+    color: black;
+    font-size: larger;
+}
+
+.text-content,
+.text-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content {
+    border-bottom: 1px dotted black;
+}
+
+.footer-content {
+    display: flex;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS';
+    margin: 0 0 0 5px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.c {
+    align-self: center;
+    margin: 25px 0 10px 0;
+    padding: 25px 0 10px 0;
+}
+
+@media (min-width: 800px) {
+    body {
+        width: 100%;
+    }
+
+    .topContent {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px 5px 5px 0;
+        padding: 5px 5px 5px 0;
+    }
+
+    .nav-bar nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 0 15px;
+    }
+
+    .nav-bar a {
+
+        padding: 0 15px 0 10px;
+        border: none;
+    }
+
+    .nav-bar a:hover {
+        font-size: x-large;
+        background-color: transparent;
+        color: black;
+    }
+
+    .logo {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .welcome {
+        margin: 10px 0 10px 0;
+        padding: 10px 0 10px 0;
+    }
+
+    .welcome h1 {
+        margin: 0px 0 5px 0;
+        padding: 0 0 10px 0;
+    }
+
+    .top-text,
+    .bottom-text {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .text-content {
+        border-right: .5px dotted black;
+        border-bottom: none;
+    }
+
+    .text-content p,
+    .text-content2 p {
+        margin: 0 5px 5px 5px;
+        padding: 0 5px 5px 5px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .c {
+        align-self: center;
+        margin: 25px 0 10px 0;
+        padding: 25px 0 10px 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        width: 100%;
+    }
+
+    .nav-bar {
+        margin: 0 0 0 50px;
+    }
+
+    .nav-bar a {
+        padding: 0 30px 0 15px;
+    }
+
+    .techArt {
+        display: flex;
+        margin: 0px 0 0 40px;
+        padding: 0 0 0 40px;
+    }
+
+    .middle-img {
+        margin: 0 0 10px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .c {
+        align-self: center;
+        margin: 25px 0 10px 0;
+        padding: 25px 0 10px 0;
+    }
+}
